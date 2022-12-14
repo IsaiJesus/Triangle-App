@@ -94,6 +94,7 @@ class _HomePageState extends State<HomePage> {
                 mul = double.parse(_input1.text) * double.parse( _input2.text);
                 div = mul / 2;
                 getText = div.toString();
+                FocusScope.of(context).unfocus();
               });
             },
             color: Color(0xFFff792e),
